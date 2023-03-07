@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /* 바로 직속 자식을 선택함, 후손은 적용되지 않음
+     맨 뒤가 타겟, 앞에는 조건 */
+
+     ul > .orange {
+        background: orange;
+     }
+
+
+    body > div > ul > li {
+        color: red;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- h1#pop -->
+    <h1 id="pop"></h1>
+
+    <!-- 위의 스타일을 복사해와서 ' ctrl + space + enter '->  -->
+    <h1 class="yellow low primary" id="change">안녕하세용</h1>
+
+
+    <div>
+        <ul>
+            <li id="apple" class="reverse ">사과</li>
+            <li class="orange">귤</li>
+            <li>수박</li>
+        </ul>
+        <div>딸기</div>
+        <p id="tomato">포도</p>
+        <span class="orange">귤</span>
+
+
+    </div>
+
+</body>
+</html>

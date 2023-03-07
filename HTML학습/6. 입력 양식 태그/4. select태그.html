@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+
+        <select name="coffee">
+            <option value="아메리카노">Americano</option>
+            <option value="카페라떼">CaffeLatte</option>
+            <option value="카푸치노" selected>Cappuccino</option>
+        </select>
+        <!-- 보여지는 것은 영어지만 서버로 전송될 때는 value 값으로 전송됨 -->
+        <!-- selected select값을 보여줄 때 default를 선택하게 
+            disabled 옵션이 보여지지만 선택은 할 수 없도록 만들 수 있음 -->
+        <button>확인</button>
+
+
+        <input type="text"  name="nick" value="홍길동" disabled>
+            <!-- 입력을 막고 서버로 넘어갈 때 넘어가지 못하도록 -> disabled
+                입력을 막고 서버로 주소가 넘어가도록 허용 -> readonly  -->
+
+    </form>
+
+
+</body>
+</html>
