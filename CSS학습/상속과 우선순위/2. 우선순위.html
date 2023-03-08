@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* color: blue !important; */
+        }
+        #c-y {
+            color: yellow;
+        }
+        .c-g {
+            color: blanchedalmond;
+
+        }
+        body {
+            color: brown;
+        }
+        div {
+            color: chartreuse;
+        }
+
+
+        h1 {
+            color: lightcoral;
+            /* 1점 */
+        }
+
+        .bbb h1 {
+            color: blueviolet;
+            /* 10점 +1점 의 우선순위 */
+        }
+
+        #aaa h1 {
+            color: darkblue;
+            /* 100점 + 1점 의 우선순위 */
+        }
+
+        #aaa div.bbb h1 {
+            color: wheat;
+            /* 100 + 1 + 10 + 1 , 최우선 상속자 점수의 합산기능에서 가장 컸기 떄문 */
+        }
+
+        #aaa bbb h1 {
+            color: red;
+        }
+
+        div.bbb > h1 {
+            color: silver;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div id="c-y" class="c-g" style="color: orangered;">안녕하세요1</div>
+
+    
+    <div id="c-y" class="c-g" >안녕하세용2</div>
+
+
+    <div class="c-g" >안녕하세용3</div>
+
+
+    <div >안녕하세용 4</div>
+
+
+    <p>안녕하세용 5</p>
+    
+
+    <hr>
+
+    <div id="aaa">
+        <div class="bbb">
+            <h1>안녕하세요6</h1>
+        </div>
+    </div>
+    
+
+</body>
+</html>
