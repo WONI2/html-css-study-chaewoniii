@@ -22,10 +22,12 @@
             font-style: italic;
         }
 
-        li ,li.sec {
+        li {
             border: 2px dotted aqua;
         }
-        /* ntn-child(-n+2) 로 풀 수 있음 위에 부분이 왜 됐는지??? 찾아볼 것 */
+        /* ntn-child(-n+2) 로 풀 수 있음 , 위에 부분이 왜 됐는지??? 찾아볼 것
+         : 우선순위에 따라서 아래부분애 더 높은 점수가 매겨진 것이 적용되고, 이외에는
+         해당 STYLE이 적용된 것 */
 
         .sec ~ li {
             border: 2px dashed violet;
