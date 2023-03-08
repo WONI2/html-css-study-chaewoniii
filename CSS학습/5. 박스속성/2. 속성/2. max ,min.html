@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .parent {
+            width: 500px;
+            height: 300px;
+            background: skyblue;
+        }
+        .child {
+            height: 200px;
+            background: orange;
+            max-width: 500px;
+            /* 부모의 크기가 줄어들면 같이 줄어듦. width는 100%이기 떄문
+            그렇지만 부모가 max-width를 넘어서게 커지면 자식은 더이상 
+            커지지않고 max-width 까지만 커진다 */
+
+            min-width: 200px;
+            /* max와 마찬가지 부모가 min보다 작아져도 같이 더 작아지지 않음 */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+</body>
+</html>
