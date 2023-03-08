@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            background: orange;
+            
+            margin-left: 100px;
+            padding-left: 50px;
+
+            /* 패딩, 보더로 가로세로가 변하는 걸 방지 */
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            background: tomato;
+            font-size: 2em;
+            color: aliceblue;
+            /* margin-left: 50px; */
+            padding: 15px; 
+            /* 텍스트작성시 내부에 여유를 주는 역할도 함 */
+            
+
+        }
+
+
+        .card {
+            width: 200px;
+            height: 300px;
+            border: 2px solid gray;
+            margin : 100px auto;
+            padding: 10px;
+        }
+        .card .img-box {
+            height: 200px;
+            background: lightgray;
+
+        }
+
+        .card .text-box {
+            /* background: red; */
+        }
+    </style>
+</head>
+<body>
+        
+
+    <div class="card">
+        <div class="img-box"></div>
+        <p class="text-box">
+            블라블라블라
+                어쩌고저쩌고
+        </p>
+    </div>
+
+
+    <div class="container">
+        <div class="box">안녕안녕안녕안녕안녕안녕안녕</div>
+    </div>
+
+</body>
+</html>

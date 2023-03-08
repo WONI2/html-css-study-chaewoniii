@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin-top: 100px;
+            background: wheat;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background: gray;
+            box-sizing: border-box;
+            margin: 10px auto 0;
+        }
+        .box1 {
+            background: tomato;
+            /* 선의굵기  box-sizing을 했기 떄문에 크기의 변화x*/
+            border-width: 10px;
+            /* 선의 모양 */
+            border-style: solid;
+            /* 선의 색상 */
+            border-color: orange;
+        }
+        .box2 {
+            background: yellow;
+            border: 4px dashed yellowgreen;
+        }
+
+        .box3{
+            background: red;
+            border-right: 4px solid yellow;
+            border-bottom: 5px dashed violet;
+            border-left: 4px dotted #000;
+            border-top: 7px double white;
+        }
+
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="box box1">멋쟁이토마토</div>
+    <div class="box box2">바나나</div>
+    <div class="box box3"></div>
+</div>
+
+
+</body>
+</html>
