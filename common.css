@@ -1,5 +1,8 @@
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
+     /*reset을 포함  */
 
-        /* common style */
+
+/* common style */
         * {
             box-sizing: border-box;
         }
