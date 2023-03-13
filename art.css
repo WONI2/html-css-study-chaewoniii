@@ -1,0 +1,140 @@
+@import url('../common.css');
+
+    body {
+        background-color: #928e8e;
+    }
+    #wrapper {  
+        width: 70%;
+        margin: 0 auto;
+
+    }
+    
+    #wrapper header{
+        background-color: #FF8C0A;
+        text-align: center;
+    }
+    #wrapper header h1 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 4em;
+        line-height: 1.4;
+        
+    }
+    #wrapper header h1 span {
+        font-size: 0.2em;
+        display: block;
+        clear: right;
+        padding-bottom: 7px;
+
+    }
+    #wrapper header .stit {
+        background-color: #a39a9a;
+        font-size: 0.5em;
+        line-height: 1.8;
+        
+    }
+    #wrapper .container {
+        background: #fff;
+        
+        
+    }
+    #wrapper .container .side-menu {
+        width: 25%;  
+        float: left;
+    }
+    #wrapper .container .side-menu h3 {
+        color: #fff;
+        background-color: #b10303;
+        padding: 10px;
+        margin-bottom: 10px;
+        
+    }
+    #wrapper .container .side-menu ul li {
+        text-decoration: underline;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        font-size: 0.7em;
+    }
+
+    #wrapper .container .main-content {
+        width: 50%;
+        background-color: #ccd6d6;
+        float: left;
+        
+    }
+    #wrapper .container .main-content .art-piece{
+        /* height: 17%; */
+        padding: 20px 10px 0 10px;
+        color: #0d103b;
+    }
+    
+    #wrapper .container .main-content .art-piece .title {
+        color: #fff;
+        font-size: 0.8em;
+        background: #0d103b;
+        padding: 1%;
+    }
+    #wrapper .container .main-content .art-piece .artist {
+        padding: 20px 0;
+    }
+    #wrapper .container .main-content .art-piece .detail {
+        font-size: 0.5em;
+        margin: 4px;
+        
+    }
+
+    #wrapper .container .banner {
+        width: 25%;
+        float: right;
+        padding-left: 10px;
+       
+    }
+    #wrapper .container .banner h3 {
+        font-size: 1.1em;
+        font-weight: 700;
+        padding-top: 15px;
+        margin-bottom: 30px;
+        
+        
+        
+    }
+
+    #wrapper .container .banner h3 .all {
+        color: #9e9898;
+        margin-bottom: 10px;
+        display: block;
+        clear: both;
+        text-decoration: underline;
+ 
+    }
+    #wrapper .container .banner h3 .love {
+        color: #FF8C0A;
+        margin-bottom: 10px;
+        display: block;
+        clear: both;
+        text-decoration: underline;
+ 
+    }
+    #wrapper .container .banner h3 strong {
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-weight: 700;
+        
+    }
+    #wrapper .container .banner .link li a {
+        text-decoration: underline;
+    }
+    #wrapper .container .banner .link li {
+        font-size: 0.7em;
+    }
+    footer {
+        background: #0d103b;
+        color: #fff;
+        text-align: center;
+        font-size: 0.7em;
+        padding: 10px;
+    }
+    footer address a {
+        text-decoration: underline;
+    }
+
