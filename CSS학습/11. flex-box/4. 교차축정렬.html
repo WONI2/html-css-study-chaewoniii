@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            height: 400px;
+            padding: 20px;
+            border: 2px solid #000;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* 교차 축 정렬 기본값: stretch , item들의 세로가 고정이면 안됨 */
+            /* align-content: center; */
+            /* align-item 과 align-content의 차이는 content는 한 덩어리로, 
+                items는 한 줄을 개별적으로 보고 그 안에서 정렬을 하기 떄문에
+                중간의 공간이 생긴다. content는 줄별로 공간이 생기지 않음   */
+            align-items: center;
+
+         
+        }                           
+        .item {
+            width: 150px;
+            height: 100px;
+            border: 4px solid yellowgreen;
+            border-radius: 10px;
+            font-size: 40px;
+            /* height 없이도 텍스트 중앙정렬도 가능! 내부의 텍스트르 아이템으로 보면, 
+            display를 이용한 중앙정렬 가능.*/
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+
+
+</body>
+</html>
